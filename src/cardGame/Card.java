@@ -1,3 +1,8 @@
+//Roman Gutierrez
+//Isaiah Cruz
+//9/24/26
+//Class : CPSC-39
+
 package cardGame;
 
 import java.util.Objects;
@@ -74,7 +79,10 @@ public class Card {
 		return Objects.equals(cardName, other.cardName) && Objects.equals(cardPicture, other.cardPicture)
 				&& Objects.equals(cardSuit, other.cardSuit) && cardValue == other.cardValue;
 	}
-	
+	public boolean testTwoOfaKind(Card other) {
+		return this.cardName.equals(other.cardName);
+		
+	}
 	
 	
 	
